@@ -1,8 +1,9 @@
-.App {
-  text-align: center;
+#responsive-navbar-nav,
+.dropdown-menu {
+  text-align: center !important;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -13,8 +14,10 @@
   }
 }
 
+
+
 .App-header {
-  background-color: #282c34;
+  background-color: #0059a4;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -36,3 +39,45 @@
     transform: rotate(360deg);
   }
 }
+ */
+
+
+
+
+.bg-blue{
+  background-color: #0059a4 !important;
+}
+footer{
+  background-color: #f7f7ff;
+  color: #003963;
+
+}
+
+.button-blue{
+  background-color: #0059a4;
+  color: #f7f7f7;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  border: none;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.button-white{
+  background-color: #f7f7ff;
+  color: #003963;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  border: 3px solid #003963;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.footer-head{
+  display: flex;
+  justify-content: space-around;
+}
+
+
