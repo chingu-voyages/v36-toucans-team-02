@@ -6,11 +6,47 @@
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
+
+.dispaly-card {
+  margin-left: 3em;
+}
+.hero-content {
+  margin-left: 5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.hero-content p {
+  font-size: 1.2rem;
+}
+.blog-heading {
+  padding-top: 2em;
+  text-align: left;
+  margin-left: 3em;
+}
+.image1 {
+  width: 250px;
+  height: 200px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.berry1{
+  background-color: white;
+  border: 1px solid grey;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-radius: 8px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  width: 250px;
+  height: 300px;
+  cursor: pointer;
+}
+.text1{
+  font-size: 0.9rem;
+}
+
+@media (max-width: 500px) {
+  .hero-content p {
+    font-size: 0.9rem;
   }
 }
 
