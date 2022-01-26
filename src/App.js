@@ -12,11 +12,10 @@ function App() {
 	return (
 		<div>
       <NavbarCom />
-      <FooterCom />
       < Header />
       < HeroContent />
       < VoteItems />
-			
+			<FooterCom />
 		</div>
 	);
 }
