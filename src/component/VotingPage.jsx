@@ -4,7 +4,7 @@ import CloseButton from 'react-bootstrap/CloseButton'
 
 
 
-function VotingPage({image, name, details, setShow}) { 
+function VotingPage({image, name, details, votes, setShow}) { 
 
   const handleClick = () => {
     setShow(false)
@@ -36,7 +36,7 @@ function VotingPage({image, name, details, setShow}) {
                     <Button variant="primary" size="lg" className="button-blue rounded-pill">
                       Vote
                     </Button>{" "}
-                    <h6 className='text-danger py-2 px-5'>Votes: 20</h6>
+                    <h6 className='text-danger py-2 px-5'>Votes: {votes}</h6>
                   </div>
                 </div>
                 <div className="row">

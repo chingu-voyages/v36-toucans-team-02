@@ -18,7 +18,8 @@ const VoteItems = () => {
         setValue({ 
             name : person.name,
             details: person.details,
-            image: person.perimg
+            image: person.perimg,
+            votes: person.votes
          })
         console.log(person)
         console.log(value.name)
@@ -58,7 +59,7 @@ const VoteItems = () => {
                     ))
                 }
                  {     
-                   show && <VotingPage image={value.image} name={value.name} details={value.details} setShow={setShow}/>
+                   show && <VotingPage image={value.image} name={value.name} details={value.details} votes={value.votes} setShow={setShow}/>
                   
               }
             </div>        
