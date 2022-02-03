@@ -61,14 +61,10 @@ const VoteItems = () => {
                         <Card className='mx-2 mb-3' style={{ width: '18rem' }} key={choice.id} onClick={(e) => pushUp( choice )} >
                             <Card.Img variant="top" src={choice.perimg} style={{height: '200px'}}/>
                             <Card.Body>
-                                <Card.Title>{choice.name}</Card.Title>
+                                <Card.Title className="fw-bold">{choice.name}</Card.Title>
                                 <Card.Text className='text1'>{choice.details}</Card.Text>
                                 <h6 className='text-danger py-2'>Votes: {choice.votes}</h6>
-                                {/* <BrowserRouter>
-                                    <Route>Ckick Me</Route>
-                                </BrowserRouter> */}
-                                
-                                               
+                                <button className='btn btn-primary'>Click Here to Vote</button>                                              
                             </Card.Body>
                         </Card>    
                     ))
