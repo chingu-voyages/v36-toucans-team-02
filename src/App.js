@@ -3,16 +3,20 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import VoteItems from './component/VoteItems';
 import Header from './component/Header';
 import HeroContent from './component/HeroContent';
+// import { Route, Routes } from 'react-router-dom';
+// import VotingPage from './component/VotingPage';
+
+
 
 function App() {
-  return (
-    <div>
+	return (
+		<div>
       < Header />
       < HeroContent />
       < VoteItems />
-       
-    </div>
-  );
+      {/* <VotingPage /> */}
+		</div>
+	);
 }
 
 export default App;
