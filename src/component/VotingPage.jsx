@@ -4,7 +4,8 @@ import CloseButton from 'react-bootstrap/CloseButton'
 
 
 
-function VotingPage({image, name, details, votes, setShow}) { 
+
+function VotingPage({image, name, details, votes, topic, incrementVoteCount, setShow}) { 
 
   const handleClick = () => {
     setShow(false)
@@ -24,19 +25,21 @@ function VotingPage({image, name, details, votes, setShow}) {
                   <Card className="bg-dark text-white " style={{ width: "40rem" }}>
                       <Card.Img src={image} alt="Card image" />
                       <Card.ImgOverlay>
-                        <Card.Title className="text-center text-primary">{name}</Card.Title>
+                        <Card.Title className="text-center text-primary"></Card.Title>
                         <Card.Text>
-                        This is a public topic
                         </Card.Text>
-                        <Card.Text>Last updated 3 mins ago</Card.Text>
+                        <Card.Text></Card.Text>
                       </Card.ImgOverlay>
                     </Card>
                   </div>
-                  <div className="col-md-2 m-auto">
-                    <Button variant="primary" size="lg" className="button-blue rounded-pill">
+                  <div className="col-md-3 m-auto">
+                    <h2 className="mt-5 text-info">{name}</h2>
+                    <p className="text-black-50 fs-5">This is a public topic</p>
+                    <p className="text-black-50 fs-6 fst-italic">Last updated 3 mins ago</p>
+                    <Button variant="primary" size="lg" className="button-blue rounded-pill" onClick={() => incrementVoteCount(votes._id)}>
                       Vote
                     </Button>{" "}
-                    <h6 className='text-danger py-2 px-5'>Votes: {votes}</h6>
+                    <h6 className='text-danger py-2 px-5'>Votes count: {votes}</h6>
                   </div>
                 </div>
                 <div className="row">
