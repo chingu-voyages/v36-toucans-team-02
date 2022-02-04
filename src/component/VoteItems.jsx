@@ -18,7 +18,6 @@ const VoteItems = () => {
 
     const values = [true];
     const [fullscreen, setFullscreen] = useState(true);
-    // const [show, setShow] = useState(false);
 
     function handleShow(breakpoint) {
     setFullscreen(breakpoint);
@@ -70,6 +69,8 @@ const VoteItems = () => {
           ))}
           {show && (
             <VotingPage
+              handleShow={handleShow}
+              values={values}
               show={show}
               fullscreen={fullscreen}
               image={value.image}
