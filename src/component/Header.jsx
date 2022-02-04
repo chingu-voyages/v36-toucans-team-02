@@ -4,7 +4,7 @@ import Typical from 'react-typical'
 const Header = () => {
   return <div>
 
-            <h1 className='text-primary text-center fs-4 pt-4'>
+            <h1 className='text-light text-center fs-4 pt-4'>
                 <Typical
                   loop={Infinity}
                   steps={[

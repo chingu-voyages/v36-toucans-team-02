@@ -84,4 +84,5 @@ const persons = [
         votes: 20
     },
 ]
+
 export default persons;

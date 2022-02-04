@@ -6,7 +6,6 @@ import VotingPage from './VotingPage'
 
 
 
-
 const VoteItems = () => {
     
     const [ show, setShow ] = useState(false)
