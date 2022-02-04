@@ -9,77 +9,77 @@ const persons = [
     {
         id: 2,
         perimg: 'assets/designer.jpg',
-        name: 'Cameron Williamson',
+        name: 'Cameron Web Design',
         details: 'Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s',
         votes: 30
     },
     {
         id: 3,
         perimg: 'assets/github.jpg',
-        name: 'Leslie Alexander',
+        name: 'Leslie Theory',
         details: 'Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s',
         votes: 34
     },
     {
         id: 4,
         perimg: 'assets/phones.jpg',
-        name: 'Jenny Wilson',
+        name: 'Jenny palace',
         details: 'Global warming is now popularly used to refer to the concentration of greenhouse gases (carbon dioxide, methane and nitrous oxide), in the atmosphere attributed',
         votes: 20
     },
     {
         id: 5,
         perimg: 'assets/stars2.jpg',
-        name: 'Marvin McKinney',
+        name: 'Grammer McKinney',
         details: 'Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s',
         votes: 23
     },
     {
         id: 6,
         perimg: 'assets/strawberry.jpg',
-        name: 'Cameron Williamson',
+        name: 'Camera Angle',
         details: 'Global warming is now popularly used to refer to the concentration of greenhouse gases (carbon dioxide, methane and nitrous oxide), in the atmosphere attributed',
         votes: 30
     },
     {
         id: 7,
         perimg: 'assets/phones.jpg',
-        name: 'Guy Hawkins',
+        name: 'Guy Walkout',
         details: 'Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s',
         votes: 34
     },
     {
         id: 8,
         perimg: 'assets/strawberry.jpg',
-        name: 'Robert Fox',
+        name: 'Robert Brush',
         details: 'Global warming is now popularly used to refer to the concentration of greenhouse gases (carbon dioxide, methane and nitrous oxide), in the atmosphere attributed',
         votes: 20
     },
     {
         id: 9,
         perimg: 'assets/designer.jpg',
-        name: 'Brooklyn Simmons',
+        name: 'green Simmons',
          details: 'Global warming is now popularly used to refer to the concentration of greenhouse gases (carbon dioxide, methane and nitrous oxide), in the atmosphere attributed',
         votes: 23
     },
     {
         id: 10,
         perimg: 'assets/github.jpg',
-        name: 'Arderw Franti',
+        name: 'Arderw Kagle',
         details: 'Global warming is now popularly used to refer to the concentration of greenhouse gases (carbon dioxide, methane and nitrous oxide), in the atmosphere attributed',
         votes: 30
     },
     {
         id: 11,
         perimg: 'assets/phones.jpg',
-        name: 'Veroni Alpha',
+        name: 'Omega Alpha',
         details: 'Web design is the process of planning, conceptualizing, and arranging content online. Today, designing a website goes beyond aesthetics to include the website’s',
         votes: 34
     },
     {
         id: 12,
         perimg: 'assets/atmosphere.jpg',
-        name: 'Astra Complli',
+        name: 'Paul Complli',
         details: 'Global warming is now popularly used to refer to the concentration of greenhouse gases (carbon dioxide, methane and nitrous oxide), in the atmosphere attributed',
         votes: 20
     },
