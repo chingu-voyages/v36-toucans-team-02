@@ -4,7 +4,7 @@ import {Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 
 const NavbarCom = () => {
-  // let voter = prompt("Welcome to Toucan's Voting Space. What is your Name?")
+
   return(
     <div>
       <header>
@@ -14,8 +14,8 @@ const NavbarCom = () => {
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='me-auto'>
-                <Nav.Link href='#'>Create Vote</Nav.Link>
-                <Nav.Link href='#'>Past Votes</Nav.Link>
+                <Nav.Link href='#page-1'>Create Vote</Nav.Link>
+                <Nav.Link href='#page-2'>Past Votes</Nav.Link>
                 
               </Nav>
 
@@ -27,10 +27,9 @@ const NavbarCom = () => {
                   <NavDropdown.Divider />
                   <NavDropdown.Item href='#action/3.4'>Armineh</NavDropdown.Item>
                   <NavDropdown.Item href='#action/3.5'>Mehmet</NavDropdown.Item>
-                  <NavDropdown.Item href='#action/3.6'>Dami</NavDropdown.Item>
                 </NavDropdown>
-                <Nav.Link href='#'>Login</Nav.Link>
-                <Nav.Link href='#'>Sign Up</Nav.Link>
+                <Nav.Link href='#page-3'>Login</Nav.Link>
+                <Nav.Link href='#page-4'>Sign Up</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>
@@ -38,6 +37,8 @@ const NavbarCom = () => {
       </header>
     </div>
   )
+    
+  
 };
 
 export default NavbarCom;

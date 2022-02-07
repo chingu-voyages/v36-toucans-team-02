@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Card} from 'react-bootstrap'
+import {Button, Card, Container} from 'react-bootstrap'
 import { useState } from 'react'
 
 
@@ -103,7 +103,9 @@ const VoteItems = () => {
         },
     ]
     return (
-        <div className='text-center'>
+
+        <Container id='page-3'>
+            <div className='text-center'>
             {/* <div className="d-flex flex-wrap Justify-content-center p-5">
                 {
                     persons.map(person => (
@@ -134,7 +136,8 @@ const VoteItems = () => {
                     ))
                 }
             </div>        
-        </div>
+            </div>
+        </Container>
     )
 }
 
