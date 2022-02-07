@@ -1,6 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Container, Navbar, Nav, NavDropdown } from 'react-bootstrap';
+import {Container, Navbar, Nav } from 'react-bootstrap';
 
 
 const NavbarCom = () => {
@@ -20,14 +20,6 @@ const NavbarCom = () => {
               </Nav>
 
               <Nav>
-              <NavDropdown title='Contact Team' id='collasible-nav-dropdown'>
-                  <NavDropdown.Item href='#action/3.1'>Blessing</NavDropdown.Item>
-                  <NavDropdown.Item href='#action/3.2'>Oreofe</NavDropdown.Item>
-                  <NavDropdown.Item href='#action/3.3'>David</NavDropdown.Item>
-                  <NavDropdown.Divider />
-                  <NavDropdown.Item href='#action/3.4'>Armineh</NavDropdown.Item>
-                  <NavDropdown.Item href='#action/3.5'>Mehmet</NavDropdown.Item>
-                </NavDropdown>
                 <Nav.Link href='#page-3'>Login</Nav.Link>
                 <Nav.Link href='#page-4'>Sign Up</Nav.Link>
               </Nav>

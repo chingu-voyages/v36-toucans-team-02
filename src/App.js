@@ -8,6 +8,7 @@ import HeroContent from './component/HeroContent';
 
 
 
+
 function App() {
 	return (
 		<div>
