@@ -2,84 +2,12 @@
 .dropdown-menu {
   text-align: center !important;
 }
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-
-.dispaly-card {
-  margin-left: 3em;
+.vote-card{
+  width: 18rem;
 }
-.hero-content {
-  margin-left: 5em;
-}
-
-.hero-content p {
+.hero-text {
   font-size: 1.2rem;
 }
-.blog-heading {
-  padding-top: 2em;
-  text-align: left;
-  margin-left: 3em;
-}
-.image1 {
-  width: 250px;
-  height: 200px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.berry1{
-  background-color: white;
-  border: 1px solid grey;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-radius: 8px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  width: 250px;
-  height: 300px;
-  cursor: pointer;
-}
-.text1{
-  font-size: 0.9rem;
-}
-
-@media (max-width: 500px) {
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-}
-
-
-
-.App-header {
-  background-color: #0059a4;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
- */
-
-
-
-
 .bg-blue{
   background-color: #078fff !important;
 }
@@ -116,4 +44,28 @@ footer{
   justify-content: space-around;
 }
 
+@media (max-width: 1024px) {
+  .hero-text {
+    font-size: 1.1rem;
+  }
+  .vote-card{
+    width: 16rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 0.9rem;
+  }
+  .vote-card{
+    width: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .vote-card{
+    width: 25rem;
+  }
+  .hero-text {
+    font-size: 0.7rem;
+  }
+}
 
