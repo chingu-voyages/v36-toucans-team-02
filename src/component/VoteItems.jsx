@@ -9,12 +9,9 @@ import VotingPage from './VotingPage'
 const VoteItems = () => {
     
     const [ show, setShow ] = useState(false)
-    let [topics, setTopics] = useState([]);
     const [value, setValue] = useState({})
 
-    useEffect(() =>{
-        setTopics(persons)
-    }, []);
+    
 
     const values = [true];
     const [fullscreen, setFullscreen] = useState(true);
@@ -24,13 +21,20 @@ const VoteItems = () => {
     setShow(true);
   }
 
+  
+  let [topics, setTopics] = useState([]);
+
+  useEffect(() => {
+    setTopics(persons);
+}, []);
+
     function incrementVoteCount(topicId) {
         topics = persons.map((topic) => {
             if (topic._id === topicId) {
                 topic.votes = topic.votes + 1; 
             }
             return topic;
-        })
+        });
         setTopics(topics);
     }
 
