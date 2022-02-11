@@ -1,44 +1,105 @@
-
-.dispaly-card {
-  margin-left: 3em;
+#responsive-navbar-nav,
+.dropdown-menu {
+  text-align: center !important;
 }
-.hero-content {
-  margin-left: 5em;
+.vote-card{
+  width: 18rem;
 }
-
-.hero-content p {
+.hero-text {
   font-size: 1.2rem;
 }
-.blog-heading {
-  padding-top: 2em;
-  text-align: left;
-  margin-left: 3em;
+.bg-blue{
+  background-color: #078fff !important;
 }
-.image1 {
-  width: 250px;
-  height: 200px;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-.berry1{
-  background-color: white;
-  border: 1px solid grey;
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-  border-radius: 8px;
-  border-radius: 8px;
-  margin-bottom: 10px;
-  width: 250px;
-  height: 300px;
-  cursor: pointer;
-}
-.text1{
-  font-size: 0.9rem;
+footer{
+  background-color: #f7f7ff;
+  color: #003963;
+
 }
 
-@media (max-width: 500px) {
-  .hero-content p {
+.button-blue{
+  background-color: #003963;
+  color: #f7f7f7;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  border: none;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.button-white{
+  background-color: #f7f7ff;
+  color: #003963;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  border: 3px solid #003963;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.footer-head{
+  display: flex;
+  justify-content: space-around;
+}
+
+@media (max-width: 1024px) {
+  .hero-text {
+    font-size: 1.1rem;
+  }
+  .vote-card{
+    width: 16rem;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
     font-size: 0.9rem;
+  }
+  .vote-card{
+    width: 18rem;
+  }
+}
+@media (max-width: 500px) {
+  .vote-card{
+    width: 25rem;
+  }
+  .hero-text {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1024px){
+  .img-size-sm{
+    width:500px !important;
+  }
+}
+
+@media (max-width: 768px){
+  .img-size-sm{
+    width:370px !important;
+    margin-right: 70px !important;
+  }
+}
+
+@media (max-width: 425px){
+  .img-size-sm{
+    width:370px !important;
+    right: 25px !important;
+  }
+}
+
+@media (max-width: 375px){
+  .img-size-sm{
+    width:330px !important;
+    right: 27px !important;
+  }
+}
+
+@media (max-width: 320px){
+  .img-size-sm{
+    width:280px !important;
+    right: 30px !important;
   }
 }
 
