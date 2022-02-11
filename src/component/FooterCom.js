@@ -2,7 +2,7 @@ import React from 'react';
 import {Row} from 'react-bootstrap';
 
 const FooterCom = () => {
-  return <footer className='main-footer'>
+  return <footer id='page-4' className='main-footer'>
     <div className="container">
       <div className='footer-head py-4'>
         <button className='button-blue'>Create Poll</button>
