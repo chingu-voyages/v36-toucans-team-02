@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Card } from 'react-bootstrap'
+import {Button, Card, Container} from 'react-bootstrap'
 import persons from './Content'
 import { useState, useEffect } from 'react'
 import VotingPage from './VotingPage'
@@ -22,20 +22,20 @@ const VoteItems = () => {
   }
 
   
-  let [topics, setTopics] = useState([]);
+  const [person, setPersons] = useState([]);
 
   useEffect(() => {
-    setTopics(persons);
+    setPersons(persons);
 }, []);
 
-    function incrementVoteCount(topicId) {
-        topics = persons.map((topic) => {
-            if (topic._id === topicId) {
-                topic.votes = topic.votes + 1; 
+    function incrementVoteCount(personId) {
+        persons = persons.map((person) => {
+            if (person._id === personId) {
+                person.votes = person.votes + 1; 
             }
-            return topic;
+            return person;
         });
-        setTopics(topics);
+        setPersons(person);
     }
 
     const rollit = (e, person ) => {
@@ -53,42 +53,45 @@ const VoteItems = () => {
 
     
     return (
-      <div className="text-center">
-        <h3 className="blog-heading">Blog Post</h3>
-        <div className="dispaly-card p-4 d-flex flex-wrap">
-          {persons.map((person) => (
-            <Card className="mx-2 mb-3" style={{ width: "18rem" }}>
-              <Card.Img
-                variant="top"
-                src={person.perimg}
-                style={{ height: "200px" }}
-              />
-              <Card.Body>
-                <Card.Title>{person.name}</Card.Title>
-                <Card.Text className="text1">{person.details}</Card.Text>
-                <h6 className="text-danger py-2">Votes: {person.votes}</h6>
-                <Button variant="primary" key={person.id} onClick={(e) => rollit(e, person )}>Click to vote</Button>
-              </Card.Body>
-            </Card>
-          ))}
-          {show && (
-            <VotingPage
-              handleShow={handleShow}
-              values={values}
-              id={value.id}
-              show={show}
-              fullscreen={fullscreen}
-              image={value.image}
-              name={value.name}
-              details={value.details}
-              votes={value.votes}
-              topic={topics}
-              setShow={setShow}
-              incrementVoteCount={(topicId) => incrementVoteCount(topicId)}
-            />
-          )}
-        </div>
-      </div>
+        <Container id='page-3'>
+            <div className="text-center">
+                <h3 className="blog-heading">Blog Post</h3>
+                <div className="dispaly-card p-4 d-flex flex-wrap">
+                {persons.map((person) => (
+                    <Card className="mx-2 mb-3" style={{ width: "16rem" }}>
+                    <Card.Img
+                        variant="top"
+                        src={person.perimg}
+                        style={{ height: "200px" }}
+                    />
+                    <Card.Body>
+                        <Card.Title>{person.name}</Card.Title>
+                        <Card.Text className="text1">{person.details}</Card.Text>
+                        <h6 className="text-danger py-2">Votes: {person.votes}</h6>
+                        <Button variant="primary" key={person.id} onClick={(e) => rollit(e, person )}>Click to vote</Button>
+                    </Card.Body>
+                    </Card>
+                ))}
+                {show && (
+                    <VotingPage
+                    handleShow={handleShow}
+                    values={values}
+                    show={show}
+                    fullscreen={fullscreen}
+                    image={value.image}
+                    name={value.name}
+                    id={value.id}
+                    details={value.details}
+                    votes={value.votes}
+                    topic={persons}
+                    setShow={setShow}
+                    incrementVoteCount={(personId) => incrementVoteCount(personId)}
+                    />
+                )}
+                </div>
+            </div>
+
+        </Container>
     );
 }
 
