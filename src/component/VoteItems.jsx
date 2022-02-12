@@ -22,20 +22,20 @@ const VoteItems = () => {
   }
 
   
-  let [topics, setTopics] = useState([]);
+  const [person, setPersons] = useState([]);
 
   useEffect(() => {
-    setTopics(persons);
+    setPersons(persons);
 }, []);
 
-    function incrementVoteCount(topicId) {
-        topics = persons.map((topic) => {
-            if (topic._id === topicId) {
-                topic.votes = topic.votes + 1; 
+    function incrementVoteCount(personId) {
+        persons = persons.map((person) => {
+            if (person._id === personId) {
+                person.votes = person.votes + 1; 
             }
-            return topic;
+            return person;
         });
-        setTopics(topics);
+        setPersons(person);
     }
 
     const rollit = (e, person ) => {
@@ -80,11 +80,12 @@ const VoteItems = () => {
                     fullscreen={fullscreen}
                     image={value.image}
                     name={value.name}
+                    id={value.id}
                     details={value.details}
                     votes={value.votes}
-                    topic={topics}
+                    topic={persons}
                     setShow={setShow}
-                    incrementVoteCount={(topicId) => incrementVoteCount(topicId)}
+                    incrementVoteCount={(personId) => incrementVoteCount(personId)}
                     />
                 )}
                 </div>

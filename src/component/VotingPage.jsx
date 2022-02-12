@@ -24,7 +24,7 @@ function VotingPage(props) {
   return (
     <>
       
-      <Modal show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+      <Modal key={topic._id} show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
         <div className="d-flex justify-content-end mx-5 my-4">
           <CloseButton onClick={handleClick} />
         </div>
@@ -70,5 +70,3 @@ function VotingPage(props) {
 }
 
 export default VotingPage;
-
-
