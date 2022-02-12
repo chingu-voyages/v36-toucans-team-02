@@ -1,7 +1,7 @@
 import React from 'react'
 import {Button, Card, Container} from 'react-bootstrap'
 import persons from './Content'
-import { useState, useEffect } from 'react'
+import { useState} from 'react'
 import VotingPage from './VotingPage'
 
 
@@ -20,23 +20,7 @@ const VoteItems = () => {
     setFullscreen(breakpoint);
     setShow(true);
   }
-
-  
-  const [person, setPersons] = useState([]);
-
-  useEffect(() => {
-    setPersons(persons);
-}, []);
-
-    function incrementVoteCount(personId) {
-        persons = persons.map((person) => {
-            if (person._id === personId) {
-                person.votes = person.votes + 1; 
-            }
-            return person;
-        });
-        setPersons(person);
-    }
+ 
 
     const rollit = (e, person ) => {
         setShow(true)
@@ -67,7 +51,7 @@ const VoteItems = () => {
                     <Card.Body>
                         <Card.Title>{person.name}</Card.Title>
                         <Card.Text className="text1">{person.details}</Card.Text>
-                        <h6 className="text-danger py-2">Votes: {person.votes}</h6>
+                        {/* <h6 className="text-danger py-2">Votes: {person.votes}</h6> */}
                         <Button variant="primary" key={person.id} onClick={(e) => rollit(e, person )}>Click to vote</Button>
                     </Card.Body>
                     </Card>
@@ -85,7 +69,6 @@ const VoteItems = () => {
                     votes={value.votes}
                     topic={persons}
                     setShow={setShow}
-                    incrementVoteCount={(personId) => incrementVoteCount(personId)}
                     />
                 )}
                 </div>

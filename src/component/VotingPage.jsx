@@ -1,30 +1,34 @@
 import React from "react";
 import { Card, Button, Modal, CloseButton } from "react-bootstrap";
-
+import { useState} from 'react'
 
 
 
 function VotingPage(props) {
+  
   let {
     image,
     name,
     details,
-    votes,
     show,
-    topic,
     setShow,
     fullscreen, 
-    incrementVoteCount,
   } = props; 
-  
-    const handleClick = () => {
-          setShow(false);
-        };
+
+  const [count, setCount] = useState(0);
+
+  const incrementVoteCount = () => {
+    setCount((persons) => persons + 1);
+  };
+
+  const handleClick = () => {
+    setShow(false);
+  };
 
   return (
     <>
       
-      <Modal key={topic._id} show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
+      <Modal  show={show} fullscreen={fullscreen} onHide={() => setShow(false)}>
         <div className="d-flex justify-content-end mx-5 my-4">
           <CloseButton onClick={handleClick} />
         </div>
@@ -50,11 +54,11 @@ function VotingPage(props) {
               variant="primary"
               size="lg"
               className="button-blue rounded-pill align-self-center"
-              onClick={(e) => incrementVoteCount( topic._id)}
+              onClick={incrementVoteCount}
             >
               Vote
             </Button>{" "}
-            <h6 className="text-danger py-2 px-5 text-center">Votes count: {votes}</h6>
+            <h6 className="text-danger py-2 px-5 text-center" id="votecount">Votes count: {count}</h6>
           </div>
         </div>
         <div className="row">
