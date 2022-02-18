@@ -1,12 +1,14 @@
 import React from 'react';
 import {Row} from 'react-bootstrap';
+import Addtopics from './Addtopics';
 
 const FooterCom = () => {
   return <footer id='page-4' className='main-footer'>
     <div className="container">
       <div className='footer-head py-4'>
-        <button className='button-blue'>Create Poll</button>
-        <button className='button-white '>Email us</button>
+        <Addtopics />
+        {/* <button className='button-blue'>Create Poll</button> */}
+        <button className='button-white but2'>Email us</button>
       </div>
 
       <Row>
