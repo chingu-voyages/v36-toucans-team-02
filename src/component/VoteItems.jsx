@@ -38,7 +38,7 @@ const VoteItems = () => {
     return (
         <Container id='page-3' className="text-center mrgi">
             <div className="text-center pt-5">
-                <h3 className="blog-heading text-white">Blog Post</h3>
+                <h3 className="blog-heading text-white">Voting Topics</h3>
                 <div className=" d-flex flex-wrap">
                 {persons.map((person) => (
                     <Card className="mx-2 mb-3 vote-card" key={person.id}>
