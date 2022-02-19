@@ -1,0 +1,126 @@
+#responsive-navbar-nav,
+.dropdown-menu {
+  text-align: center !important;
+}
+.vote-card{
+  width: 18rem;
+}
+.hero-text {
+  font-size: 1.2rem;
+}
+.bg-blue{
+  background-color: #078fff !important;
+}
+footer{
+  background-color: #f7f7ff;
+  color: #003963;
+
+}
+
+.button-blue{
+  background-color: #003963;
+  color: #f7f7f7;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.button-white{
+  background-color: #f7f7ff ;
+  color: #003963 ;
+  height: 3rem;
+  width: 10rem;
+  border-radius: 25px;
+  border: 3px solid #003963;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+}
+
+.footer-head{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+@media (min-width: 1440px) {
+  .mrgi{
+    margin-left: 100px !important;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-text {
+    font-size: 1.1rem;
+  }
+  .img-size-sm{
+    width:500px !important;
+  }
+  .vote-card{
+    width: 16rem;
+  }
+  .mrgi{
+    margin-left: 90px !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 0.9rem;
+  }
+  .vote-card{
+    width: 18rem;
+  }
+  .mrgi{
+    margin-left: 80px !important;
+  }
+  .img-size-sm{
+    width:370px !important;
+    margin-right: 70px !important;
+  }
+}
+@media (max-width: 500px) {
+  .vote-card{
+    width: 25rem;
+  }
+  .hero-text {
+    font-size: 0.7rem;
+  }
+}
+
+
+@media (max-width: 425px){
+  .img-size-sm{
+    width:370px !important;
+    right: 25px !important;
+  }
+  .but{
+    margin-left: 100px;
+  }
+  .mrgi{
+    margin-left: 3px !important;
+  }
+}
+
+@media (max-width: 375px){
+  .img-size-sm{
+    width:330px !important;
+    right: 27px !important;
+  }
+  .but{
+    margin-left: 80px;
+  }
+}
+
+@media (max-width: 320px){
+  .img-size-sm{
+    width:280px !important;
+    right: 30px !important;
+  }
+  .but{
+    margin-left: 50px;
+  }
+  .but2{
+    margin-left:10px
+  }
+}
+
