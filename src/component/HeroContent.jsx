@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button, Container } from 'react-bootstrap';
+import Addtopics from './Addtopics';
 
 const HeroContent = () => {
   return (
@@ -9,7 +10,8 @@ const HeroContent = () => {
             <p className='hero-text'>
               Click <a href="https://docs.google.com/forms/d/e/1FAIpQLScR7T-FxFHz5nW8EnOLXJAYgxkbWd5G_6oRHYQg8CgEMPRTPQ/viewform?usp=sf_link">here</a> to give a feedback about our app.
             </p>
-            <Button className="btn btn-primary">Get in Touch</Button>
+            <Addtopics />
+            {/* <Button className="btn btn-primary">Get in Touch</Button> */}
         </div>
 
 
