@@ -6,10 +6,8 @@ const HeroContent = () => {
       <Container id='page-2' >
         <div className='hero-content mx-5 text-white'>
             <h4 className='fw-bolder'>Hi! I'm Chingu2</h4>
-            <p className='hero-text'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
-                soluta iste maiores dicta eum, illum ullam accusantium maxime <br />
-                blanditiis recusandae dolores alias porro, molestias doloribus
-                natus voluptatum expedita vel sed.
+            <p className='hero-text'>
+              Click <a href="https://docs.google.com/forms/d/e/1FAIpQLScR7T-FxFHz5nW8EnOLXJAYgxkbWd5G_6oRHYQg8CgEMPRTPQ/viewform?usp=sf_link">here</a> to give a feedback about our app.
             </p>
             <Button className="btn btn-primary">Get in Touch</Button>
         </div>
