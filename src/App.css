@@ -23,14 +23,13 @@ footer{
   height: 3rem;
   width: 10rem;
   border-radius: 25px;
-  border: none;
   margin: 1rem 0;
   font-size: 1.3rem;
 }
 
 .button-white{
-  background-color: #f7f7ff;
-  color: #003963;
+  background-color: #f7f7ff ;
+  color: #003963 ;
   height: 3rem;
   width: 10rem;
   border-radius: 25px;
@@ -44,12 +43,24 @@ footer{
   justify-content: space-around;
 }
 
+
+@media (min-width: 1440px) {
+  .mrgi{
+    margin-left: 100px !important;
+  }
+}
 @media (max-width: 1024px) {
   .hero-text {
     font-size: 1.1rem;
   }
+  .img-size-sm{
+    width:500px !important;
+  }
   .vote-card{
     width: 16rem;
+  }
+  .mrgi{
+    margin-left: 90px !important;
   }
 }
 @media (max-width: 768px) {
@@ -58,6 +69,13 @@ footer{
   }
   .vote-card{
     width: 18rem;
+  }
+  .mrgi{
+    margin-left: 80px !important;
+  }
+  .img-size-sm{
+    width:370px !important;
+    margin-right: 70px !important;
   }
 }
 @media (max-width: 500px) {
@@ -69,23 +87,17 @@ footer{
   }
 }
 
-@media (max-width: 1024px){
-  .img-size-sm{
-    width:500px !important;
-  }
-}
-
-@media (max-width: 768px){
-  .img-size-sm{
-    width:370px !important;
-    margin-right: 70px !important;
-  }
-}
 
 @media (max-width: 425px){
   .img-size-sm{
     width:370px !important;
     right: 25px !important;
+  }
+  .but{
+    margin-left: 100px;
+  }
+  .mrgi{
+    margin-left: 3px !important;
   }
 }
 
@@ -94,12 +106,21 @@ footer{
     width:330px !important;
     right: 27px !important;
   }
+  .but{
+    margin-left: 80px;
+  }
 }
 
 @media (max-width: 320px){
   .img-size-sm{
     width:280px !important;
     right: 30px !important;
+  }
+  .but{
+    margin-left: 50px;
+  }
+  .but2{
+    margin-left:10px
   }
 }
 

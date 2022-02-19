@@ -11,14 +11,14 @@ import HeroContent from './component/HeroContent';
 
 function App() {
 	return (
-		<div>
+    <div>
       <NavbarCom />
-      < Header />
-      < HeroContent />
-      < VoteItems />
-			<FooterCom />
-		</div>
-	);
+      <Header />
+      <HeroContent />
+      <VoteItems />
+      <FooterCom />
+    </div>
+  );
 }
 
 export default App;
