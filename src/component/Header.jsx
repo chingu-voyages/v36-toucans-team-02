@@ -10,12 +10,6 @@ const Header = () => {
                   steps={[
                       "Welcome to Our Voting App",
                       2000,
-                      "With Host of Topics Created by Users",
-                      2000,
-                      "You can share your feelings with a vote",
-                      2000,
-                      "Only Registered Users can Vote",
-                      2000, 
                   ]}
                 />
             </h1>
