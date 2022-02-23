@@ -6,16 +6,17 @@ import {Container, Navbar, Nav } from 'react-bootstrap';
 const NavbarCom = () => {
 
   return(
-    <div>
-      <header>
+    <div >
+      <header >
         <Navbar className='bg-blue' collapseOnSelect expand='lg' variant='dark'>
-          <Container>
+          <Container >
             <Navbar.Brand href='/'><h2>Toucan Logo</h2></Navbar.Brand>
             <Navbar.Toggle aria-controls='responsive-navbar-nav' />
             <Navbar.Collapse id='responsive-navbar-nav'>
               <Nav className='me-auto'>
                 <Nav.Link href='#page-1'>Create Vote</Nav.Link>
                 <Nav.Link href='#page-2'>Past Votes</Nav.Link>
+                <Nav.Link href="https://docs.google.com/forms/d/e/1FAIpQLScR7T-FxFHz5nW8EnOLXJAYgxkbWd5G_6oRHYQg8CgEMPRTPQ/viewform?usp=sf_link">Give Feedback</Nav.Link>
                 
               </Nav>
 
