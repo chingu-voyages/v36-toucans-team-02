@@ -21,7 +21,7 @@ function VotingPage(props) {
         <div className="d-flex justify-content-end mx-5 my-4">
           <CloseButton onClick={handleClick} />
         </div>
-        <Modal.Body>
+        <Modal.Body className="bg-2">
           <div className="">
             <div className="row">
               <h2 className="mt-2 text-center text-info d-sm-block d-md-none ">

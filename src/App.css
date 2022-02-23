@@ -3,16 +3,26 @@
   text-align: center !important;
 }
 .vote-card{
-  width: 18rem;
+  width: 22rem;
+  border: none !important;
+  border-radius: 15px !important;
+  background-color: none !important;
 }
 .hero-text {
   font-size: 1.2rem;
 }
 .bg-blue{
-  background-color: #078fff !important;
+  background-color: #84beee !important;
 }
 footer{
-  background-color: #f7f7ff;
+  background-image: url(../public/assets/l3.png);
+  color: #003963;
+}
+.bg-2{
+  background-image: url(../public/assets/l1.png);
+  
+}
+.text-pri{
   color: #003963;
 }
 

@@ -5,9 +5,9 @@ import Addtopics from './Addtopics';
 const HeroContent = () => {
   return (
       <Container id='page-2' >
-        <div className='hero-content mx-5 text-white'>
+        <div className='hero-content mx-5 text-pri'>
             <h4 className='fw-bolder fs-1'>Hi! I'm Chingu2</h4>
-            <p className='hero-text fs-4 text-light'>
+            <p className='hero-text fs-4 text-pri'>
             Welcome to Our Voting App With Host of Topics Created by Users.
             <br />You can share your feelings with a vote.
             <br />All Users can Vote...
